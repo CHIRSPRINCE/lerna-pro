@@ -2,5 +2,20 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "npmClient": "yarn",
+  "command": {
+    "bootstrap": {
+      "registry": "https://nexus.onecontract-cloud.com/repository/oc-npm-group/"
+    },
+    "version": {
+      "allowBranch": [
+        "master",
+        "release-*"
+      ]
+    },
+    "publish": {
+      "registry": "https://nexus.onecontract-cloud.com/repository/oc-npm-source/"
+    }
+  }
 }
